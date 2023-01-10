@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="account.css">
+    <script src="https://use.fontawesome.com/88d54f1693.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/jpg" sizes="32x32" href="img/logo/log-1.png">
+    <link rel="icon" type="image/jpg" sizes="16x16" href="img/logo/log-1.png">
+    <script src="account.js" async></script>
+</head>
+
+<body>
+    <div class="container">
+        <a id="close"><i class="far fa-times" onclick="history.go(-1);"></i></a>
+        <div class="header">
+            <h2>Create Account</h2>
+            <p>Already have an account? <a href="login.html">Log In</a></p>
+        </div>
+        <form class="form" id="form">
+            <div class="form-control">
+                <label for="first-name">First Name</label>
+                <input type="text" placeholder="Enter your first name" id="first-name">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message</small>
+            </div>
+
+            <div class="form-control">
+                <label>Last Name</label>
+                <input type="text" placeholder="Enter your last name" id="last-name">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message</small>
+            </div>
+
+            <div class="form-control">
+                <label>Email</label>
+                <input type="text" placeholder="gudigoodies@example.com" id="email">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message</small>
+            </div>
+
+            <div class="form-control">
+                <label>Password</label> (<a span id="p-req" onclick="myFunction()">Strong Password?</a>)
+                <input type="password" placeholder="Input Strong Password" id="password">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message</small>
+            </div>
+            <div class="form-control">
+                <label>Confirm Password</label>
+                <input type="Password" placeholder="Re-enter Password" id="password-two">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message</small>
+            </div>
+            <div class="check">
+                <input type="checkbox" name="Terms-of-Service" id="checkbox">&nbsp; I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a> of Gudi Goodies.
+            </div>
+
+            <input class="submit" type="submit" value="Sign Up">
+        </form>
+    </div>
+</body>
+
+</html>

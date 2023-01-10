@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="account.css">
+    <script src="https://use.fontawesome.com/88d54f1693.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/jpg" sizes="32x32" href="img/logo/log-1.png">
+    <link rel="icon" type="image/jpg" sizes="16x16" href="img/logo/log-1.png">
+    <script src="account.js" async></script>
+</head>
+
+<body>
+    <div class="container">
+        <a id="close"><i class="far fa-times" onclick="history.go(-1);"></i></a>
+        <div class="header">
+            <h2>Log In</h2>
+            <p>New to this site? <a href="signup.html">Create Account</a></p>
+        </div>
+        <form class="form" id="form">
+
+            <div class="form-control">
+                <label>Email</label>
+                <input type="email" placeholder="Enter your email address" id="email">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message</small>
+            </div>
+
+            <div class="form-control">
+                <label>Password</label>
+                <input type="password" placeholder="Enter your password" id="password">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message</small>
+            </div>
+            <center>
+                <p><a href="#">Forgot Password</a></p>
+            </center>
+
+            <button class="submit">Log In</button>
+
+        </form>
+    </div>
+</body>
+
+</html>
